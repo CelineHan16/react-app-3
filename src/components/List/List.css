@@ -1,0 +1,8 @@
+.List {
+  margin: 0 5px;
+  border: 1px solid rgb(210, 192, 169);
+  border-radius: .5rem;
+}
+.List li {
+  padding: .5rem 1rem .5rem 0;
+}
