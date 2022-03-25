@@ -1,4 +1,6 @@
 import List from "./components/List/List";
+import ArticleList from "./components/ArticlesList/ArticlesList";
+import ProgressBar from "./components/ProgressBar/ProgressBar";
 
 function App() {
   const veggies = ["Carrot", "Potato", "Tomato"];
@@ -27,9 +29,20 @@ function App() {
     </li>
   ));
 
+  const articles = [
+    { title: "This is an example article", url: "#", teaser: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis quam deleniti. Illo earum minus eaque doloribus nulla nostrum, possimus ipsam id delectus ipsa enim officiis quas consequuntur nihil quibusdam." },
+    { title: "Another article as an example", url: "#", teaser: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis quam deleniti. Illo earum minus eaque doloribus nulla nostrum, possimus ipsam id delectus ipsa enim officiis quas consequuntur nihil quibusdam." },
+    { title: "Last example article", url: "#", teaser: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis quam deleniti. Illo earum minus eaque doloribus nulla nostrum, possimus ipsam id delectus ipsa enim officiis quas consequuntur nihil quibusdam." },
+  ];
+
   return (
     <div className="App">
       <h1>Hello World</h1>
+      <ProgressBar progress={25} />
+      <ProgressBar progress={50} color="orange" />
+      <ProgressBar progress={30} color="greenyellow" />
+      <ProgressBar progress={70} />
+      <ProgressBar progress={90} color="violet" />
       <ul>
         {veggiesList}
       </ul>
@@ -41,6 +54,7 @@ function App() {
       </ul>
 
       <List src={veggies} />
+      <ArticleList src={articles} />
     </div>
   );
 }
