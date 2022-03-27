@@ -1,6 +1,7 @@
 import List from "./components/List/List";
 import ArticleList from "./components/ArticlesList/ArticlesList";
 import ProgressBar from "./components/ProgressBar/ProgressBar";
+import Table from "./components/Table/Table";
 
 function App() {
   const veggies = ["Carrot", "Potato", "Tomato"];
@@ -35,9 +36,17 @@ function App() {
     { title: "Last example article", url: "#", teaser: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum omnis quam deleniti. Illo earum minus eaque doloribus nulla nostrum, possimus ipsam id delectus ipsa enim officiis quas consequuntur nihil quibusdam." },
   ];
 
+  const table = [
+    { id: "1", name: "Haru", from: "Extraordinary You" },
+    { id: "2", name: "Hido", from: "Twenty five, twenty one" },
+    { id: "3", name: "HanJ", from: "StartUp" }
+  ]; 
+
   return (
     <div className="App">
       <h1>Hello World</h1>
+      <Table src={table} />
+
       <ProgressBar progress={25} />
       <ProgressBar progress={50} color="orange" />
       <ProgressBar progress={30} color="greenyellow" />

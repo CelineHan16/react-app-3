@@ -1,0 +1,14 @@
+.Table {
+  margin: 10px;
+  border-collapse: collapse;
+}
+.Table tr {
+  padding: 10px;
+}
+td:nth-of-type(even) {
+  background-color: rgb(218, 214, 214);
+}
+.Table td {
+  padding: 10px;
+  border: 1px solid rgb(187, 184, 184);
+}
