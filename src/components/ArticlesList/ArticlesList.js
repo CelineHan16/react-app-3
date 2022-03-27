@@ -1,3 +1,5 @@
+import "./ArticlesList.css";
+
 function ArticleList(props) {
   return props.src.map((article) => (
     <article>

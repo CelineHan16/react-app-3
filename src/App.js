@@ -41,6 +41,7 @@ function App() {
       <ProgressBar progress={25} />
       <ProgressBar progress={50} color="orange" />
       <ProgressBar progress={30} color="greenyellow" />
+      <ProgressBar progress={83} color="blue" />
       <ProgressBar progress={70} />
       <ProgressBar progress={90} color="violet" />
       <ul>
